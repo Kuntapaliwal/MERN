@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Detail</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <style>
+        body {
+            background-color: rgb(180, 214, 245);
+        }
+
+        ul>li>a {
+            color: white;
+        }
+
+        nav,
+        footer {
+            background-color: rgb(89, 145, 234);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#0">
+            Sporty
+            <img src="../../../Assets/Images/images (1).png" alt="" width="85px">Shoes
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav offset-8">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Home</strong>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>LogIn</strong>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>SignUp</strong>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+    <header class="text-center col-md-6 mx-auto mt-4">
+        <h1 class="display-4 text-primary text-uppercase">Product-Detail</h1>
+        <hr />
+    </header>
+    <main class=" container col-12 my-2">
+        <div class="my-2 row">
+            <!-- crousel for latest deal -->
+            <div id="carouselExample" class="carousel slide col-3 mx-3 row" data-ride="carousel">
+                <!-- Indicators -->
+                <div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExample" data-slide-to="1"></li>
+                        <li data-target="#carouselExample" data-slide-to="2"></li>
+                        <li data-target="#carouselExample" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner " style=" background-color: rgb(89, 145, 234)">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 h-1 a" width="1024" height="500"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/5e168d0e-e532-4159-a73f-aec0bca848a4/jordan-5-why-not-basketball-shoes-6V8Hzg.png"
+                                alt="First slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-1 a" width="1024" height="500"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/2b9bdf6b-6a23-437c-9d0f-4446fc4da5e4/jordan-5-why-not-basketball-shoes-6V8Hzg.png"
+                                alt="Second slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>
+                                    Praesent commodo cursus magna, vel scelerisque nisl
+                                    consectetur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-1 a " width="1024" height="500"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/92ed37ba-d948-4696-aa03-7101b16624b9/jordan-5-why-not-basketball-shoes-6V8Hzg.png"
+                                alt="Third slide" />
+
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>
+                                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100 h-1 a" width="1024" height="500"
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4e1d7e1f-f375-4fc7-aa74-cd006ae68604/jordan-5-why-not-basketball-shoes-6V8Hzg.png"
+                                alt="Third slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Forth slide label</h5>
+                                <p>
+                                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+
+                <form action="Product-description" method="GET" class="font-weight-bold">
+                    <!-- Name (firstname and lastname) -->
+                    <div id="name" name="name" class="row form-group">
+                        <div id="firstNameField" name="nameField" class="col-lg-6">
+                            <label for="fname">Name
+                                <label for="fname">Nike special Running shoes</label><br />
+                            </label><br />
+                        </div>
+                        <div id="priceField" name="priceField" class="col-lg-6">
+                            <label for="price">Price:
+                                <label for="price">4000/-</label><br />
+                            </label><br />
+                        </div>
+                        <div id="Quantity" name="quantityField" class="col-lg-6">
+                            <label for="price">Quantity:
+                                <select name=" qty" id="qty">
+                                    <option value="Qty:1">Qty:1</option>
+                                    <option value="Qty:2">Qty:2</option>
+                                    <option value="Qty:3">Qty:3</option>
+                                    <option value="Qty:4">Qty:4</option>
+                                    <option value="Qty:5">Qty:5</option>
+                                    <option value="Qty:6">Qty:6</option>
+                                    <option value="Qty:7">Qty:7</option>
+                                    <option value="Qty:8">Qty:8</option>
+                                    <option value="Qty:9">Qty:9</option>
+                                    <option value="Qty:10">Qty:10</option>
+                                </select><br /></label><br />
+                        </div>
+                        <!-- size -->
+
+                        <div id="size" name="sizeField" class="col-lg-6">
+                            <label for="price">Select Size:</label>
+                            <select name=" size" id="size">
+                                <option value="Size">UK-3.5</option>
+                                <option value="Size">UK-4</option>
+                                <option value="Size">UK-4.5</option>
+                                <option value="Size">UK-5</option>
+                                <option value="Size">UK-5.5</option>
+                                <option value="Size">UK-6</option>
+                                <option value="Size">UK-6.5</option>
+                                <option value="Size">UK-7.5</option>
+                                <option value="Size">UK-8</option>
+                                <option value="Size">UK-8.5</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                <h2 class="dispaly-4">Description</h2>
+                <p>
+                    The radiance lives on in the Nike Air Force 1 '07, the b-ball icon that puts a fresh spin on
+                    what
+                    you
+                    know
+                    best: crisp
+                    leather, bold colours and the perfect amount of flash to make you shine.
+
+                <h6 class="Display-6">Colour Shown: White/White/White/White</h6>
+                <h6 class="Display-6">Style: DD8959-100</h6>
+                </p>
+                <div class="row">
+                    <input type="Button" id="Buy-item" name="Buy-item" class="form-control  font-weight-bold col-5 ml-1"
+                        value="Buy" readonly />
+                    <input type="Button" id="Buy-item" name="Buy-item" class="form-control font-weight-bold col-5 ml-1 "
+                        value="Wishlist" readonly />
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <footer class="page-footer font-small indigo my-2">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left" style="color: white">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Very long link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white">© 2020 Copyright:
+            <a href="/" style="color: white"> SportyShoes.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+</body>
+
+</html>

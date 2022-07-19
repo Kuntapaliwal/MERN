@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <style>
+        body {
+            background-color: rgb(180, 214, 245);
+        }
+
+        ul>li>a {
+            color: white;
+        }
+
+        nav,
+        footer {
+            background-color: rgb(89, 145, 234);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#0">
+            Sporty
+            <img src="../../../Assets/Images/images (1).png" alt="" width="85px">Shoes
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav offset-8 ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>Home</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <strong>Products</strong>
+                    </a>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>LogIn</strong>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <strong>SignUp</strong>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <main class="mt-4 col-12 ">
+        <header class="text-center">
+            <h1 class="display-4 text-primary text-uppercase">Products</h1>
+        </header>
+        <hr />
+
+        <table border="5px" class="table my-4">
+            <thead>
+                <th scope="col">Product-View</th>
+                <th scope="col">Product-Name</th>
+                <th scope="col">Product-Price<sub>(price in rupees)</sub></th>
+                <th scope="col">Size</th>
+                <th scope="col">Product-Quantity</th>
+                <th scope="col">Action</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/baf2fd1f-f127-4006-a6a3-50e820d8ac34/zoomx-invincible-run-flyknit-2-road-running-shoes-0lCQ5S.png"
+                                alt="" width="100" height="100">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            Nike-Running Shoes
+                        </div>
+                    </td>
+                    <td>
+                        </div class="pd-5 ml-8 mt-8">2000
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            <select name=" size" id="size">
+                                <option value="Size">UK-3.5</option>
+                                <option value="Size">UK-4</option>
+                                <option value="Size">UK-4.5</option>
+                                <option value="Size">UK-5</option>
+                                <option value="Size">UK-5.5</option>
+                                <option value="Size">UK-6</option>
+                                <option value="Size">UK-6.5</option>
+                                <option value="Size">UK-7.5</option>
+                                <option value="Size">UK-8</option>
+                                <option value="Size">UK-8.5</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            <select name=" qty" id="qty">
+                                <option value="Qty:1">Qty:1</option>
+                                <option value="Qty:2">Qty:2</option>
+                                <option value="Qty:3">Qty:3</option>
+                                <option value="Qty:4">Qty:4</option>
+                                <option value="Qty:5">Qty:5</option>
+                                <option value="Qty:6">Qty:6</option>
+                                <option value="Qty:7">Qty:7</option>
+                                <option value="Qty:8">Qty:8</option>
+                                <option value="Qty:9">Qty:9</option>
+                                <option value="Qty:10">Qty:10</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-group pd-5 ml-3 mt-3" role="group">
+                            <button type="button" id="Buy-item" name="Buy-item" class="btn btn-lg"
+                                style="background-color: white;">Buy</button>
+                            <button type="button" id="view-item" name="view-item" class="btn btn-lg "
+                                style="background-color: rgb(89, 145, 234)">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img
+                                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5c4819ab-3102-4f56-855d-e18eef9ab538/zoomx-invincible-run-flyknit-2-road-running-shoes-xrCMmF.png"
+                                width="100" height="100" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"> Nike-Running Shoes
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"> 2000 </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            <select name=" size" id="size">
+                                <option value="Size">UK-3.5</option>
+                                <option value="Size">UK-4</option>
+                                <option value="Size">UK-4.5</option>
+                                <option value="Size">UK-5</option>
+                                <option value="Size">UK-5.5</option>
+                                <option value="Size">UK-6</option>
+                                <option value="Size">UK-6.5</option>
+                                <option value="Size">UK-7.5</option>
+                                <option value="Size">UK-8</option>
+                                <option value="Size">UK-8.5</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"><select name=" qty" id="qty">
+                                <option value="Qty:1">Qty:1</option>
+                                <option value="Qty:2">Qty:2</option>
+                                <option value="Qty:3">Qty:3</option>
+                                <option value="Qty:4">Qty:4</option>
+                                <option value="Qty:5">Qty:5</option>
+                                <option value="Qty:6">Qty:6</option>
+                                <option value="Qty:7">Qty:7</option>
+                                <option value="Qty:8">Qty:8</option>
+                                <option value="Qty:9">Qty:9</option>
+                                <option value="Qty:10">Qty:10</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-group pd-5 ml-3 mt-3" role="group">
+                            <button type="button" id="Buy-item" name="Buy-item" class="btn btn-lg"
+                                style="background-color: white;">Buy</button>
+                            <button type="button" id="view-item" name="view-item" class="btn btn-lg "
+                                style="background-color: rgb(89, 145, 234)">View</button>
+                        </div>
+                        <!-- <input type="Button" id="Buy-item" name="Buy-item" class="form-control font-weight-bold "
+                            value="Buy" readonly />
+                        <input type="Button" id="view-item" name="view-item" class="form-control font-weight-bold "
+                            value="View" readonly /> -->
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><img
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/37ed6ea9-988f-4ff9-98c6-c71a9ebdd4e9/downshifter-11-road-running-shoes-SfsHLw.png"
+                                width="100" height="100" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">Nike-Running Shoes</div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">2000</div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">
+                            <select name=" size" id="size">
+                                <option value="Size">UK-3.5</option>
+                                <option value="Size">UK-4</option>
+                                <option value="Size">UK-4.5</option>
+                                <option value="Size">UK-5</option>
+                                <option value="Size">UK-5.5</option>
+                                <option value="Size">UK-6</option>
+                                <option value="Size">UK-6.5</option>
+                                <option value="Size">UK-7.5</option>
+                                <option value="Size">UK-8</option>
+                                <option value="Size">UK-8.5</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"><select name=" qty" id="qty">
+                                <option value="Qty:1"> Qty:1</option>
+                                <option value="Qty:2"> Qty:2</option>
+                                <option value="Qty:3"> Qty:3</option>
+                                <option value="Qty:4"> Qty:4</option>
+                                <option value="Qty:5"> Qty:5</option>
+                                <option value="Qty:6"> Qty:6</option>
+                                <option value="Qty:7"> Qty:7</option>
+                                <option value="Qty:8"> Qty:8</option>
+                                <option value="Qty:9"> Qty:9</option>
+                                <option value="Qty:10">Qty:10</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-group pd-5 ml-3 mt-3" role="group">
+                            <button type="button" id="Buy-item" name="Buy-item" class="btn btn-lg"
+                                style="background-color: white;">Buy</button>
+                            <button type="button" id="view-item" name="view-item" class="btn btn-lg "
+                                style="background-color: rgb(89, 145, 234)">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div> <img
+                                src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f094af40-f82f-4fb9-a246-e031bf6fc411/air-force-1-07-shoe-NMmm1B.png"
+                                width="100" height="100" alt=""></div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"> Nike Running Shoes </div>
+                    </td>
+                    <td>
+                        <div class="pd-5 ml-8 mt-8">2000</div>
+                    </td>
+                    <td>
+                        <div>
+                            <select name=" size" id="size">
+                                <option value="Size">UK-3.5</option>
+                                <option value="Size">UK-4</option>
+                                <option value="Size">UK-4.5</option>
+                                <option value="Size">UK-5</option>
+                                <option value="Size">UK-5.5</option>
+                                <option value="Size">UK-6</option>
+                                <option value="Size">UK-6.5</option>
+                                <option value="Size">UK-7.5</option>
+                                <option value="Size">UK-8</option>
+                                <option value="Size">UK-8.5</option>
+                            </select>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="pd-5 ml-8 mt-8"><select name=" qty" id="qty">
+                                <option value="1"> Qty:1</option>
+                                <option value="2"> Qty:2</option>
+                                <option value="3"> Qty:3</option>
+                                <option value="4"> Qty:4</option>
+                                <option value="5"> Qty:5</option>
+                                <option value="6"> Qty:6</option>
+                                <option value="7"> Qty:7</option>
+                                <option value="8"> Qty:8</option>
+                                <option value="9"> Qty:9</option>
+                                <option value="10">Qty:10</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn-group pd-5 ml-3 mt-3" role="group">
+                            <button type="button" id="Buy-item" name="Buy-item" class="btn btn-lg"
+                                style="background-color: white;">Buy</button>
+                            <button type="button" id="view-item" name="view-item" class="btn btn-lg "
+                                style="background-color: rgb(89, 145, 234)">View</button>
+                        </div>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+
+    <footer class="page-footer font-small indigo my-2">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left" style="color: white">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Very long link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Very long link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white">© 2020 Copyright:
+            <a href="/" style="color: white"> SportyShoes.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
